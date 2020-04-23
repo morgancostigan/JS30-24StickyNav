@@ -21,8 +21,13 @@ body {
   padding: 40px;
   text-align: justify;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-  transform: scale(0.98);
-  transition: transform 0.5s;
+  transform: scale(0.85);  /*really small, so it can transition more dramatically*/
+  transition: transform 2s;
+}
+
+/* this will bring body content full size ONLY when .fixed-nav is on*/
+.fixed-nav .site-wrap {
+  transform: scale(1);
 }
 
 header {
@@ -74,7 +79,7 @@ li.logo {
   max-width: 0;
   overflow: hidden;
   background: white;
-  transition: all .5s;
+  transition: all 5s; /*nice slow transition*/
   font-weight: 600;
   font-size: 30px;
 }
